@@ -8,9 +8,11 @@ contract Greeter {
     constructor(string memory _initialGreeting) {
         greeting = _initialGreeting;
     }
+    
     function setGreeting(string memory _newGreeting) public {
         greeting = _newGreeting;
     }
+
     function greet() public view returns (string memory) {
         return greeting;
     }
